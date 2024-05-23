@@ -1,0 +1,29 @@
+---
+- students:
+  - name : shyama
+  - email : shyama.ks101@gmail.com
+  - address :
+      doorno: 2102
+      streetno: 100
+      pincode: 411028
+
+  - name : shyama1
+  - email : shyama1.ks101@gmail.com
+  - address : 
+      doorno: 2102
+      streetno: 100
+      pincode: 411028  
+
+  - name : shyama2
+  - email : shyama2.ks101@gmail.com
+  - address : 
+      doorno: 2102
+      streetno: 100
+      pincode: 411028 
+
+  - name : shyama3
+  - email : shyama3.ks101@gmail.com
+  - address : 
+      doorno: 2102
+      streetno: 100
+      pincode: 411028 
