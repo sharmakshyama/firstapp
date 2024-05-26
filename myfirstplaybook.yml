@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: instal git
+    dnf:
+      name: git
+      state: present
+  - name: install wget
+    dnf:
+      name: wget
+      state: present
+  - name: install tree
+    dnf:
+      name: tree
+      state: present
