@@ -1,0 +1,6 @@
+[dev]
+172.31.29.128
+172.31.29.128 
+
+[dev:vars]
+mywebsername=httpd

@@ -1,0 +1,15 @@
+---
+- hosts: dev
+  become: yes
+  tasks:
+  - name: Install httpd with variable
+    dnf:
+      name: "{{mywebsername}}"
+      state: present
+    when: ansible_os_family == ""{{osname}}""
+
+  - name: Start webserver 
+    service:
+      name: "{{mywebsername}}"
+      state: started
+    when: ansible_os_family == ""{{osname}}""
