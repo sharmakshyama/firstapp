@@ -1,0 +1,13 @@
+---
+- hosts: dev
+  become: yes
+  tasks:
+  - name: install httpd server
+    dnf:
+      name: {{mywebsername}}
+      state: present
+
+  - name: start httpd server
+    service:
+      name: {{mywebsername}}
+      state: started
