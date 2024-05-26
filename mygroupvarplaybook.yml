@@ -4,10 +4,10 @@
   tasks:
   - name: install httpd server
     dnf:
-      name: {{mywebsername}}
+      name: "{{mywebsername}}"
       state: present
 
   - name: start httpd server
     service:
-      name: {{mywebsername}}
+      name: "{{mywebsername}}"
       state: started
