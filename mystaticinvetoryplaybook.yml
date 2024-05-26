@@ -1,0 +1,15 @@
+---
+- hosts: dev
+  become: yes 
+  tasks:
+    - name: Install on dev server
+      dnf:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"
+
+    - name: Start server on Redhat
+      service:
+        name: httpd
+        state: started
+      when: ansible_os_family =="RedHat""
